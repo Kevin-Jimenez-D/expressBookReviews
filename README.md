@@ -286,3 +286,9 @@ Ir a la siguiente ruta para ver los detalles del libro según el autor a continu
 Tome una captura de pantalla del mismo y guárdela con el nombre `3-getbooksbyauthor.png` para enviarla en la Tarea 3 de la Tarea de revisión por pares.
 
 ![image](img/3-getbooksbyauthor.png)
+
+Ir a la siguiente ruta para ver los detalles del libro según el autor a continuación, en este caso el autor "Chinua Achebe", como este tiene un espacio, los espacios en las urls son con "%20", entonces para buscar ese autor es
+
+`http://localhost:5000/author/Chinua%20Achebe`
+
+![image](img/4.GetSpecificAuthorBookWithSpaceInUrl.png)
