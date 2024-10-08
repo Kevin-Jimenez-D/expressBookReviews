@@ -146,14 +146,93 @@ En este proyecto final, crearemos una aplicación de revisión de libros en lín
 
 Para mi caso
 
-`git clone https://github.com/<your Github username>/expressBookReviews.git`
+`git clone https://github.com/Kevin-Jimenez-D/expressBookReviews.git`
 
 5. Cambiar el directorio para empezar a trabajar
 
-`cd expressBookReviews/final_project/`
+`cd final_project/`
 
 6. Y listar los contenidos
 
 `ls`
 
 ## Comprender la aplicación del servidor
+
+Ver el código index.js.
+
+Los paquetes necesarios para este proyecto como las dependencias estan en packages.json, por lo menos debe tener lo siguiente:
+
+```JSON
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.19"
+}
+```
+
+## Comprender las rutas de usuario
+
+Navegar en la carpeta router que tendra 3 archivos:
+
+1. `booksdb.js` Aquí se incluye la información del libro precargado para esta aplicación.
+
+2. `general.js` Esto contiene las implementaciones esqueléticas de las rutas a las que un usuario general puede acceder.
+
+3. `auth_users.js` Esto contiene las implementaciones esqueléticas de las rutas a las que un usuario autorizado puede acceder.
+
+## Empezar a correr el servidor
+
+Antes recordar de que se debe estar en otra ruta
+
+`cd final_project/`
+
+Ejecute npm install para instalar los módulos necesarios e iniciar el servidor.
+
+`npm install`
+
+Y luego hacer correr el archivo index.js, con esto debe aparecer que el servidor esta corriendo
+
+`node index.js`
+
+## Actualización del código para el mecanismo de autenticación:
+
+- Navegar a `index.js` y actualizar el código de autenticación abajo `app.use("/customer/auth/*", function auth(req,res,next){`
+
+Sugerencia: utilice la función de autorización de sesión (implementada en el laboratorio del proyecto de práctica) para autenticar a un usuario según el token de acceso.
+
+Para validar los funtos finales, se usará Insomnia, es descargarlo para sus sistema operativo
+
+`https://insomnia.rest/download`
+
+Registrarse, y lo primero es crear una nueva colección para este proyecto en Insomnia
+
+![image](img/1.CrearNuevaColeccionInsomnia.png)
+
+Y además, un nuevo método HTTp
+
+![image](img/2.CrearNuevaSolicitudHttp.png)
+
+Enviar una solicitud POST en el punto final, utilizando los siguientes parámetros JSON en el "cuerpo" de la solicitud.
+
+`http://localhost:5000/customer/auth/`
+
+Seleccione 'Body' >> >> 'JSON' y pase los parámetros.
+
+```JSON
+{"username":"user2", "password":"password2"}
+```
+
+Debería devolver el resultado como {"mensaje": "Usuario registrado correctamente. Ahora puede iniciar sesión"}
+
+![image](img/3.SignUpProyect.png)
+
+## Actualizar y probar las rutas generales de usuario
+
+En general.js
+
+Notas
+
+- Recuerda enviar tu trabajo al repositorio de GitHub después de completar cada tarea o si no estás completando el laboratorio en una sola sesión. Puedes encontrar los pasos para enviar el repositorio a GitHub en la Tarea 14. Esto te ayudará a evitar perder tu progreso.
+
+- Si tienes dificultades al usar Postman, puedes usar comandos curl para probar los puntos finales de la API, como se muestra en el Módulo 3: Laboratorio práctico: Operaciones CRUD con Node.js y Express. Proporciona capturas de pantalla que muestren la salida JSON de tus comandos curl en tu envío para revisión por pares. Para este caso se usará Insomnia como una forma alternativa
