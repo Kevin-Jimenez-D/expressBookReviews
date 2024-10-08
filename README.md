@@ -254,3 +254,17 @@ Ir a la siguiente ruta para ver todos los libros disponibles
 Tome una captura de pantalla del mismo y guárdela con el nombre `1-getallbooks.png` para enviarla en la Tarea 1 de la Tarea de revisión por pares.
 
 ![image](img/1-getallbooks.png)
+
+### Tarea 2:
+
+Complete el código para obtener los detalles del libro según el ISBN en `public_users.get('/isbn/:isbn',function (req, res) {`
+
+Sugerencia: Recupere el ISBN de los parámetros de la solicitud
+
+Ir a la siguiente ruta para ver el libro disponible de acuerdo al isbn=1
+
+`http://localhost:5000/isbn/1`
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `2-gedetailsISBN.png` para enviarla en la Tarea 2 de la Tarea de revisión por pares.
+
+![image](img/2-gedetailsISBN.png)

@@ -22,7 +22,14 @@ public_users.get('/',function (req, res) {
 // Get book details based on ISBN
 public_users.get('/isbn/:isbn',function (req, res) {
   //Write your code here
-  return res.status(300).json({message: "Yet to be implemented"});
+  //return res.status(300).json({message: "Yet to be implemented"});
+
+  //Con un email especifico sin utilizar filtro
+  //res.send(friends[req.params.email]);
+  // Retrieve the email parameter from the request URL and send the corresponding friend's details
+  //const isbn = req.params.isbn;
+  //res.send({books}[isbn]);
+  res.send(books[req.params.isbn]);
  });
   
 // Get book details based on author
