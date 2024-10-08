@@ -74,7 +74,13 @@ public_users.get('/title/:title',function (req, res) {
 //  Get book review
 public_users.get('/review/:isbn',function (req, res) {
   //Write your code here
-  return res.status(300).json({message: "Yet to be implemented"});
+  //return res.status(300).json({message: "Yet to be implemented"});
+
+  //Complete el código para obtener reseñas de libros
+  //Sugerencia: Obtenga las reseñas de libros según el ISBN proporcionado en los parámetros de solicitud.
+  const isbn = req.params.isbn;
+  res.send(books[isbn].reviews);
+
 });
 
 module.exports.general = public_users;

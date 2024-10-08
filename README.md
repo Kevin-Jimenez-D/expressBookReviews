@@ -304,3 +304,17 @@ Ir a la siguiente ruta para ver los detalles del libro según el titulo a contin
 Tome una captura de pantalla del mismo y guárdela con el nombre `4-getbooksbytitle.png` para enviarla en la Tarea 4 de la Tarea de revisión por pares.
 
 ![image](img/4-getbooksbytitle.png)
+
+### Tarea 5:
+
+Complete el código para obtener reseñas de libros en `public_users.get('/review/:isbn',function (req, res) {`
+
+Sugerencia: Obtenga las reseñas de libros según el ISBN proporcionado en los parámetros de solicitud.
+
+Ir a la siguiente ruta para ver el libro disponible de acuerdo al isbn=1
+
+`http://localhost:5000/review/1`
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `5-getbookreview.png` para enviarla en la Tarea 5 de la Tarea de revisión por pares.
+
+![image](img/5-getbookreview.png)
