@@ -268,3 +268,21 @@ Ir a la siguiente ruta para ver el libro disponible de acuerdo al isbn=1
 Tome una captura de pantalla del mismo y guárdela con el nombre `2-gedetailsISBN.png` para enviarla en la Tarea 2 de la Tarea de revisión por pares.
 
 ![image](img/2-gedetailsISBN.png)
+
+### Tarea 3:
+
+Complete el código para obtener los detalles del libro según el autor a continuación `public_users.get('/author/:author',function (req, res) {`
+
+Consejos:
+
+1. Obtenga todas las claves para el objeto "libros".
+
+2. Recorra la matriz "libros" y verifique que el autor coincida con el proporcionado en los parámetros de la solicitud.
+
+Ir a la siguiente ruta para ver los detalles del libro según el autor a continuación, en este caso los desconocidos
+
+`http://localhost:5000/author/Unknown`
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `3-getbooksbyauthor.png` para enviarla en la Tarea 3 de la Tarea de revisión por pares.
+
+![image](img/3-getbooksbyauthor.png)
