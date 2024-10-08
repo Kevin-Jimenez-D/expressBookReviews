@@ -351,3 +351,15 @@ Si ya hay un usuario registrado, devuelve que este ya existe
 Y si no se digitan usuario o contraseña, devuelve que no se puede registrar
 
 ![image](img/6.NotUsernameNotPasswordError.png)
+
+## Actualizar y probar las rutas de usuarios autenticados
+
+In `auth_users.js`
+
+### Tarea 7:
+
+Complete el código para iniciar sesión como usuario registrado.
+
+Sugerencia: El código debe validar e iniciar sesión en un cliente según el nombre de usuario y la contraseña creados en el Ejercicio 6. También debe guardar las credenciales de usuario para la sesión como un JWT. Como se le solicita que inicie sesión como cliente, mientras prueba la salida en Postman o Insomnia, use el punto final como "customer/login"
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `7-login.png` para enviarla en la Tarea 7 de la Tarea de revisión por pares.
