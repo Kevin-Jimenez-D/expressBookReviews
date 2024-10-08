@@ -318,3 +318,36 @@ Ir a la siguiente ruta para ver el libro disponible de acuerdo al isbn=1
 Tome una captura de pantalla del mismo y guárdela con el nombre `5-getbookreview.png` para enviarla en la Tarea 5 de la Tarea de revisión por pares.
 
 ![image](img/5-getbookreview.png)
+
+
+### Tarea 6:
+
+Completa el código para registrar un nuevo usuario
+
+Sugerencia: El código debe incluir el nombre de usuario y la contraseña que se proporcionan en el cuerpo de la solicitud de registro. Si el nombre de usuario ya existe, debe mencionarlo y también debe mostrar otros errores, como cuando no se proporcionan el nombre de usuario y la contraseña.
+
+Enviar una solicitud POST en el punto final, utilizando los siguientes parámetros JSON en el "cuerpo" de la solicitud.
+
+`http://localhost:5000/register`
+
+Seleccione 'Body' >> >> 'JSON' y pase los parámetros.
+
+```JSON
+{"username":"user2", "password":"password2"}
+```
+
+Debería devolver el resultado como {"mensaje": "Usuario registrado correctamente. Ahora puede iniciar sesión"}
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `6-register.png` para enviarla en la Tarea 6 de la Tarea de revisión por pares.
+
+![image](img/6-register.png)
+
+#### Los errores:
+
+Si ya hay un usuario registrado, devuelve que este ya existe
+
+![image](img/5.usernameAlreadyExistsError.png)
+
+Y si no se digitan usuario o contraseña, devuelve que no se puede registrar
+
+![image](img/6.NotUsernameNotPasswordError.png)

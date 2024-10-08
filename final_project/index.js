@@ -4,6 +4,7 @@ const session = require('express-session')
 const customer_routes = require('./router/auth_users.js').authenticated;
 const genl_routes = require('./router/general.js').general;
 
+//Esto es posible que no deba estar
 let users = []
 
 const app = express();
