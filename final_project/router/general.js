@@ -56,7 +56,19 @@ public_users.get('/author/:author',function (req, res) {
 // Get all books based on title
 public_users.get('/title/:title',function (req, res) {
   //Write your code here
-  return res.status(300).json({message: "Yet to be implemented"});
+  //return res.status(300).json({message: "Yet to be implemented"});
+
+  //Complete el código para obtener los detalles del libro según el título a continuación
+  //Obtenga todas las claves para el objeto "libros"
+  let keys = Object.keys(books);
+  //Recorra la matriz "libros" y verifique que el titulo coincida con el proporcionado en los parámetros de la solicitud.
+  let filtered_books = [];
+  keys.forEach((key) => {
+    if (books[key].title === req.params.title) {
+      filtered_books.push(books[key]);
+    }
+  });
+  res.send(filtered_books);
 });
 
 //  Get book review

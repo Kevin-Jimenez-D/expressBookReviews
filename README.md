@@ -292,3 +292,15 @@ Ir a la siguiente ruta para ver los detalles del libro según el autor a continu
 `http://localhost:5000/author/Chinua%20Achebe`
 
 ![image](img/4.GetSpecificAuthorBookWithSpaceInUrl.png)
+
+### Tarea 4:
+
+Complete el código para obtener los detalles del libro según el título a continuación `public_users.get('/title/:title',function (req, res) {`
+
+Ir a la siguiente ruta para ver los detalles del libro según el titulo a continuación, en este caso el autor "Fairy tales", como este tiene un espacio, los espacios en las urls son con "%20", entonces para buscar ese autor es
+
+`http://localhost:5000/title/Fairy%20tales`
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `4-getbooksbytitle.png` para enviarla en la Tarea 4 de la Tarea de revisión por pares.
+
+![image](img/4-getbooksbytitle.png)
