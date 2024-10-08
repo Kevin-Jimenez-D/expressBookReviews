@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use("/customer",session({secret:"fingerprint_customer",resave: true, saveUninitialized: true}))
 
-// LO RELACIONADO PARA REGISTRARSE
+// SIGN-UP
 // Check if a user with the given username already exists
 const doesExist = (username) => {
     // Filter the users array for any user with the same username

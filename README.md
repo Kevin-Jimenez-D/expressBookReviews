@@ -236,3 +236,21 @@ Notas
 - Recuerda enviar tu trabajo al repositorio de GitHub después de completar cada tarea o si no estás completando el laboratorio en una sola sesión. Puedes encontrar los pasos para enviar el repositorio a GitHub en la Tarea 14. Esto te ayudará a evitar perder tu progreso.
 
 - Si tienes dificultades al usar Postman, puedes usar comandos curl para probar los puntos finales de la API, como se muestra en el Módulo 3: Laboratorio práctico: Operaciones CRUD con Node.js y Express. Proporciona capturas de pantalla que muestren la salida JSON de tus comandos curl en tu envío para revisión por pares. Para este caso se usará Insomnia como una forma alternativa
+
+### Tarea 1
+
+Completa el código para obtener el listado de libros disponibles en la tienda en `public_users.get('/',function (req, res) {`
+
+Sugerencia: utilice el método JSON.stringify para mostrar la salida de forma ordenada.
+
+Si algo cerrar los servidores anteriores con CTRL+C, y luego en general.js hacer los cambios, despues de hacerlos de nuevo ejecutar
+
+`node index.js`
+
+Ir a la siguiente ruta para ver todos los libros disponibles
+
+`http://localhost:5000/`
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `1-getallbooks.png` para enviarla en la Tarea 1 de la Tarea de revisión por pares.
+
+![image](img/1-getallbooks.png)
