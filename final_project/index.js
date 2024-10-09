@@ -29,7 +29,7 @@ app.use("/customer",session({secret:"fingerprint_customer",resave: true, saveUni
 //     }
 // }
 
-// Rutas que no requieren autenticación (como login y registro)
+// Rutas que no requieren autenticación (como login y registro), pero deben tener como primera opción /customer
 app.use("/customer", customer_routes);
 
 // Aplicar autenticación a rutas que la requieran (por ejemplo, después de login)

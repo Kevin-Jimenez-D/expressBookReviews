@@ -362,4 +362,18 @@ Complete el código para iniciar sesión como usuario registrado.
 
 Sugerencia: El código debe validar e iniciar sesión en un cliente según el nombre de usuario y la contraseña creados en el Ejercicio 6. También debe guardar las credenciales de usuario para la sesión como un JWT. Como se le solicita que inicie sesión como cliente, mientras prueba la salida en Postman o Insomnia, use el punto final como "customer/login"
 
+Para esta actividad, se debe haber registrado un usuario en la tarea 6, y estos mismos datos deben estar en la actividad 7, la ruta para explorar es, enviar una solicitud POST en el punto final, utilizando los siguientes parámetros JSON en el "cuerpo" de la solicitud.
+
+`http://localhost:5000/customer/login`
+
+Seleccione 'Body' >> >> 'JSON' y pase los parámetros. Recuerda, debe ser los mismos que los de la tarea 6
+
+```JSON
+{"username":"user2", "password":"password2"}
+```
+
+Debería devolver el resultado como {"mensaje": "User successfully logged in"}
+
 Tome una captura de pantalla del mismo y guárdela con el nombre `7-login.png` para enviarla en la Tarea 7 de la Tarea de revisión por pares.
+
+![image](img/7-login.png)
