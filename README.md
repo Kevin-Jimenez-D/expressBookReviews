@@ -377,3 +377,31 @@ Debería devolver el resultado como {"mensaje": "User successfully logged in"}
 Tome una captura de pantalla del mismo y guárdela con el nombre `7-login.png` para enviarla en la Tarea 7 de la Tarea de revisión por pares.
 
 ![image](img/7-login.png)
+
+### Tarea 8:
+
+Complete el código para agregar o modificar una reseña de un libro.
+
+Consejo: Debes enviar una reseña como una consulta de solicitud y debe publicarse con el nombre de usuario (almacenado en la sesión) publicado. Si el mismo usuario publica una reseña diferente con el mismo ISBN, debe modificar la reseña existente. Si otro usuario inicia sesión y publica una reseña con el mismo ISBN, se agregará como una reseña diferente con el mismo ISBN.
+
+Para esto el usuario debe existir y haberse logeado, entonces se debe enviar la solicitud put a la siguiente ruta
+
+`http://localhost:5000/customer/auth/review/1`
+
+Seleccione 'Body' >> >> 'JSON' y pase los parámetros. 
+
+```JSON
+{
+  "review": "Uy buenisimo"
+}
+```
+
+Debería aparecer el mensaje de actualizado o creado
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `8-reviewadded.png` para enviarla en la Tarea 8 de la Tarea de revisión por pares.
+
+![image](img/8-reviewadded.png)
+
+Y ahí también esta la prueba de que se creó correctamente
+
+![image](img/Task8Review.png)
