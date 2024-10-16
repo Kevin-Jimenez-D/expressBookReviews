@@ -482,3 +482,16 @@ Tome una captura de pantalla y guárdela con el nombre `task12.png` para enviarl
 ![image](img/task12.png)
 
 El código estaría ahí y el resultado
+
+### Task 13:
+
+Agregue el código para obtener los detalles del libro según el título (realizado en la tarea 4) mediante devoluciones de llamadas de Promise o async-await con Axios.
+Sugerencia: consulte este laboratorio sobre promesas y devoluciones de llamadas.
+
+Asegúrese de que el archivo general.js tenga el código para obtener los detalles del libro según el título mediante devoluciones de llamadas de Promise o async-await con Axios.
+
+Tome una captura de pantalla y guárdela con el nombre `task13.png` para enviarla en la tarea 13 para la tarea de revisión por pares.
+
+![image](img/task13.png)
+
+El código estaría ahí y el resultado en la consola

@@ -143,5 +143,19 @@ const getDetailsOfBookforAuthor = async (author) => {
 //Ahora acá llamo a la funcion
 getDetailsOfBookforAuthor('Samuel Beckett');
 
+//Agregue el código para obtener los detalles del libro según el título (realizado en la tarea 4) mediante devoluciones de llamadas de Promise o async-await con Axios.
+//Sugerencia: consulte este laboratorio sobre promesas y devoluciones de llamadas.
+
+const getDetailsOfBookforTitle = async (title) => {
+  try {
+    const response = await axios.get(`http://localhost:5000/title/${title}`);
+    console.log(response.data); // Muestra los detalles del libro en la consola
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+//Ahora acá llamo a la funcion
+getDetailsOfBookforTitle('The Divine Comedy');
 
 module.exports.general = public_users;
