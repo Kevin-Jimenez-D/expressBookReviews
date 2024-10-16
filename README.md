@@ -444,10 +444,27 @@ En este caso ya estan los cambios, sin embargo,para ejecutar este código, neces
 
 `npm install --save axios`
 
-Ahora ya el código tiene traer los libros usando promesas y axios. Tome una captura de pantalla del mismo y guárdela con el nombre  `task10.png` para enviarla en la Tarea 10 de la Tarea de revisión por pares.
+Ahora ya el código tiene traer los libros usando promesas y axios. Tome una captura de pantalla del mismo y guárdela con el nombre  `task10.png` para enviarla en la Tarea 10 de la Tarea de revisión por pares. Ahí estaría el código
 
 ![image](img/task10.png)
 
 Y ya cuando accede se accede a la ruta, se veran los libros
 
 `http://localhost:5000/`
+
+### Task 11
+
+Agregue el código para obtener los detalles del libro según el ISBN (realizado en la Tarea 2) mediante devoluciones de llamadas de Promise o async-await con Axios.
+Sugerencia: consulte este laboratorio sobre promesas y devoluciones de llamadas.
+
+Asegúrese de que el archivo general.js tenga el código para obtener los detalles del libro según el ISBN mediante devoluciones de llamadas de Promise o async-await con Axios.
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `task11.png` para enviarla en la Tarea 11 para la Tarea de revisión por pares.
+ 
+![image](img/task11.png)
+
+En el código con solo colocar el ISBN, corre la función y muestra los resultados en la consola
+
+Los resultados de los 2 códigos se veran en la consola o terminal
+
+![image](img/task10task11DataConsole.png)

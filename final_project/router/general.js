@@ -117,4 +117,16 @@ const connectToURL = async (url) => {
 // Llama a la función para conectarse a la ruta '/' y obtener la lista de libros
 connectToURL('http://localhost:5000/');
 
+const getBookWithISBN = async (isbn) => {
+  try {
+    const response = await axios.get(`http://localhost:5000/isbn/${isbn}`);
+    console.log(response.data); // Muestra los detalles del libro en la consola
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+//Ahora acá llamo a la funcion
+getBookWithISBN('1');
+
 module.exports.general = public_users;
