@@ -129,4 +129,19 @@ const getBookWithISBN = async (isbn) => {
 //Ahora acá llamo a la funcion
 getBookWithISBN('1');
 
+//Agregue el código para obtener los detalles del libro según el autor (hecho en la tarea 3) usando devoluciones de llamadas Promise o async-await con Axios.
+//Sugerencia: consulte este laboratorio sobre promesas y devoluciones de llamadas.
+const getDetailsOfBookforAuthor = async (author) => {
+  try {
+    const response = await axios.get(`http://localhost:5000/author/${author}`);
+    console.log(response.data); // Muestra los detalles del libro en la consola
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+//Ahora acá llamo a la funcion
+getDetailsOfBookforAuthor('Samuel Beckett');
+
+
 module.exports.general = public_users;

@@ -471,3 +471,14 @@ Los resultados de los 2 códigos se veran en la consola o terminal
 
 ### Task 12
 
+Agregue el código para obtener los detalles del libro según el autor (hecho en la tarea 3) usando devoluciones de llamadas Promise o async-await con Axios.
+
+Sugerencia: consulte este laboratorio sobre promesas y devoluciones de llamadas.
+
+Asegúrese de que el archivo general.js tenga el código para obtener los detalles del libro según el autor mediante devoluciones de llamadas de promesa o async-await con Axios.
+
+Tome una captura de pantalla y guárdela con el nombre `task12.png` para enviarla en la Tarea 12 para la tarea de revisión por pares.
+
+![image](img/task12.png)
+
+El código estaría ahí y el resultado
