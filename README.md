@@ -405,3 +405,25 @@ Tome una captura de pantalla del mismo y guárdela con el nombre `8-reviewadded.
 Y ahí también esta la prueba de que se creó correctamente
 
 ![image](img/Task8Review.png)
+
+# Tarea 9:
+
+Complete el código para eliminar una reseña de un libro a continuación, `regd_users.delete("/auth/review/:isbn", (req, res) => {`
+
+Sugerencia: filtre y elimine las reseñas según el nombre de usuario de la sesión, para que un usuario pueda eliminar solo sus reseñas y no las de otros usuarios.
+
+Para esto el usuario debe existir y haberse logeado, entonces se debe enviar la solicitud delete a la siguiente ruta
+
+`http://localhost:5000/customer/auth/review/1`
+
+Con esto se borra con el usuario con el que se haya logeado, y debería aparecer el mensaje de borrado correctamente, antes de borrarlo, es mirar las reseñas que haya, y de ahí se borrará una
+
+![image](img/Task9DeleteReviewBefore.png)
+
+Tome una captura de pantalla del mismo y guárdela con el nombre `9-deletereview.png` para enviarla en la Tarea 9 de la Tarea de revisión por pares.
+
+![image](img/9-deletereview.png)
+
+Y se verá que se borró correctamente
+
+![image](img/Task9DeleteReviewAfter.png)

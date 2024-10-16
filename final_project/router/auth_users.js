@@ -105,6 +105,35 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
   
 });
 
+regd_users.delete("/auth/review/:isbn", (req, res) =>{
+  //Complete el código para eliminar una reseña de un libro
+  //Sugerencia: filtre y elimine las reseñas según el nombre de usuario de la sesión, para que un usuario pueda eliminar solo sus reseñas y no las de otros usuarios.
+
+  // Obtener el ISBN del libro de los parámetros
+  const isbn = req.params.isbn;
+  
+  // Obtener el nombre de usuario de la sesión
+  const username = req.session.authorization?.username;
+
+  if (!username) {
+    return res.status(401).json({ message: "User not authenticated" });
+  }
+
+  // Verificar si el libro existe
+  if (!books[isbn]) {
+    return res.status(404).json({ message: "Book not found" });
+  }
+
+  // Verificar si el usuario tiene una reseña para este libro
+  if (!books[isbn].reviews || !books[isbn].reviews[username]) {
+    return res.status(404).json({ message: "Review not found" });
+  }
+
+  // Eliminar la reseña del usuario
+  delete books[isbn].reviews[username];
+  return res.status(200).json({ message: "Review deleted successfully" });
+})
+
 module.exports.authenticated = regd_users;
 module.exports.isValid = isValid;
 module.exports.users = users;
