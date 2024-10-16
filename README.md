@@ -495,3 +495,16 @@ Tome una captura de pantalla y guárdela con el nombre `task13.png` para enviarl
 ![image](img/task13.png)
 
 El código estaría ahí y el resultado en la consola
+
+### Task 14:
+
+Actualización del repositorio de Github para su envío a revisión por pares
+Tarea 14:
+Confirme y envíe todos los cambios a su repositorio de Github bifurcado.
+Nota: consulte este laboratorio si necesita ayuda para confirmar y enviar cambios a su repositorio.
+
+`https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/GitHubLabs/Git_Clone_Commit_Push.md.html?origin=www.coursera.org`
+
+El enlace de su repositorio de Github se utilizará para la evaluación de la tarea 14 en la tarea de revisión por pares. Para clonar el repositorio es con esto
+
+`https://github.com/Kevin-Jimenez-D/expressBookReviews.git`
