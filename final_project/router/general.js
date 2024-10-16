@@ -4,6 +4,9 @@ let isValid = require("./auth_users.js").isValid;
 let users = require("./auth_users.js").users;
 const public_users = express.Router();
 
+//importa el módulo axios, que se utiliza para realizar solicitudes HTTP.
+const axios = require('axios').default;
+
 
 public_users.post("/register", (req,res) => {
   //Write your code here
@@ -100,5 +103,18 @@ public_users.get('/review/:isbn',function (req, res) {
   res.send(books[isbn].reviews);
 
 });
+
+// Función que utiliza Axios para hacer una solicitud GET
+const connectToURL = async (url) => {
+  try {
+    const response = await axios.get(url);
+    console.log(response.data); // Muestra la lista de libros en la consola
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+// Llama a la función para conectarse a la ruta '/' y obtener la lista de libros
+connectToURL('http://localhost:5000/');
 
 module.exports.general = public_users;

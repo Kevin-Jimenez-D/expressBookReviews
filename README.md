@@ -406,7 +406,7 @@ Y ahí también esta la prueba de que se creó correctamente
 
 ![image](img/Task8Review.png)
 
-# Tarea 9:
+### Tarea 9:
 
 Complete el código para eliminar una reseña de un libro a continuación, `regd_users.delete("/auth/review/:isbn", (req, res) => {`
 
@@ -427,3 +427,27 @@ Tome una captura de pantalla del mismo y guárdela con el nombre `9-deletereview
 Y se verá que se borró correctamente
 
 ![image](img/Task9DeleteReviewAfter.png)
+
+### Task 10:
+
+Mejorar el alcance de las tareas 1 a 4 mediante promesas o Async-Await. Ahora utilizará devoluciones de llamadas Promise o funciones Async-Await para realizar la misma funcionalidad que cubrimos de forma sincrónica en las Tareas 1 a 4.
+
+Nota: tome una captura de pantalla de la implementación de su código utilizando async/await o Promises para las tareas 10 a 13. Esta captura de pantalla se utilizará para el envío a revisión por pares.
+
+Agregue el código para obtener la lista de libros disponibles en la tienda (realizado en la Tarea 1) mediante devoluciones de llamadas de Promise o async-await con Axios.
+
+Sugerencia: consulte este laboratorio sobre promesas y devoluciones de llamadas.
+
+Asegúrese de que el archivo `general.js` tenga el código para obtener la lista de libros disponibles en la tienda usando devoluciones de llamadas Promise o async-await con Axios.
+
+En este caso ya estan los cambios, sin embargo,para ejecutar este código, necesitamos instalar el paquete axios. Ejecute el siguiente comando para instalar axios.
+
+`npm install --save axios`
+
+Ahora ya el código tiene traer los libros usando promesas y axios. Tome una captura de pantalla del mismo y guárdela con el nombre  `task10.png` para enviarla en la Tarea 10 de la Tarea de revisión por pares.
+
+![image](img/task10.png)
+
+Y ya cuando accede se accede a la ruta, se veran los libros
+
+`http://localhost:5000/`
